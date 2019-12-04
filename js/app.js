@@ -30,3 +30,5 @@ const age = prompt('Enter your age here:');
 if((person && age < 20) || (!person && age > 30)){
     console.log('OK');
 }
+
+"AB47".split('')
