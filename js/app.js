@@ -1,11 +1,32 @@
 console.log('App was loaded...');
 
-let str1 = {en: 'Hello', ru: 'Привет'};
-let str2 = {en: 'world', ru: 'мир'};
-let str3 = {en: 'Its me', ru: 'Это я'};
+const person = confirm('Are you man?');
+const age = prompt('Enter your age here:');
 
-const locale = 'ru';
+// if(person){
+//     if(age > 20){
+//         if(age < 40){
+//             console.log('OK');
+//         }
+//     }
+// }
 
-// console.log('text 1 : text 2');
-// console.log(str1 + ' : ' + str2 + ' # ' + str3);
-console.log(`${str1[locale]} ${str2[locale]}! ${str3[locale]}`);
+// if(person && age > 20 && age < 40){
+//     console.log('OK');
+// }else{
+//     console.log('nOK');
+// }
+
+// if(person){
+//     if(age < 20){
+//         console.log('OK male');
+//     }
+// }else{
+//     if(age > 30){
+//         console.log('OK female');
+//     }
+// }
+
+if((person && age < 20) || (!person && age > 30)){
+    console.log('OK');
+}
